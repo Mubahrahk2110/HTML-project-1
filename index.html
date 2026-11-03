@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdulazeez Mubarak | Portfolio</title>
+</head>
+<body>
+
+  <header>
+    <p class="brand">Abdulazeez Mubarak</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" aria-labelledby="home-title">
+      <div class="hero">
+        <div>
+          <h1 id="home-title">Hi, I'm Abdulazeez Mubarak.</h1>
+          <p>I build clear, useful things for the web. Scroll down to see who I am, what I've made, and how to reach me.</p>
+          <p><a href="#work">See my work</a> or <a href="#contact">get in touch</a>.</p>
+        </div>
+        <img src="/Mubarak Passport.jpg" alt="Image" height="100px", width="100px">
+        
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About me</h2>
+      <p>B.Sc. Biochemistry graduate with hands-on experience in technical support, 
+device/POS repairs, customer service, quality checks and laboratory assistance. 
+Skilled in troubleshooting, service delivery and CRM tools (Zendesk and HubSpot), with 
+ongoing training in Python, data science and AI development. </p>
+
+      <h3>Things I enjoy</h3>
+      <ul>
+        <li>Building small web projects</li>
+        <li>Solving problems step by step</li>
+        <li>Learning something new every week</li>
+      </ul>
+      <h3>My learning path</h3>
+      <ol>
+        <li>HTML fundamentals</li>
+        <li>CSS and layout</li>
+        <li>JavaScript basics</li>
+      </ol>
+      <aside>
+        <p><strong>Fun fact:</strong> I love to provide solutions</p>
+      </aside>
+
+      <figure>
+        <video controls width="640" poster="">
+          <source src="media/intro.mp4" type="video/mp4">
+          <track kind="captions" src="media/intro.vtt" srclang="en" label="English">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>A short video introduction.</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls>
+          <source src="media/welcome.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Optional: a voice greeting.</figcaption>
+      </figure>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" aria-labelledby="work-title">
+      <h2 id="work-title">My work</h2>
+      <div class="work-list">
+        <article>
+          <h3>Project one</h3>
+          <p>A short description of what I've built.</p>
+          <p><a href="#contact">Ask me about it</a></p>
+        </article>
+        <article>
+          <h3>Project two</h3>
+          <p>Tools used such as HTML, CSS, or JavaScript.</p>
+          <p><a href="#contact">Ask me about it</a></p>
+        </article>
+        <article>
+          <h3>Project three</h3>
+          <p>What i learned while making it.</p>
+          <p><a href="#contact">Ask me about it</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" aria-labelledby="resume-title">
+      <h2 id="resume-title">Resume</h2>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Education and experience</caption>
+          <thead>
+            <tr><th scope="col">Years</th><th scope="col">Role or qualification</th><th scope="col">Where</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>2020 to 2024</td><td>Your degree</td><td>Lagos State university</td></tr>
+            <tr><td>2023</td><td>Internship or job title</td><td>Company name</td></tr>
+            <tr><td>2024 to now</td><td>Current role</td><td>Company name</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML, CSS</li>
+        <li>Communication</li>
+        <li>Problem solving</li>
+      </ul>
+      <p><a href="resume.pdf" download>Download my full resume (PDF)</a></p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact me</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div>
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div>
+          <label for="topic">What is this about?</label>
+          <select id="topic" name="topic">
+            <option value="job">A job opportunity</option>
+            <option value="project">A project</option>
+            <option value="hello">Just saying hello</option>
+          </select>
+        </div>
+        <fieldset>
+          <legend>How should I reply?</legend>
+          <input type="radio" id="reply-email" name="reply" value="email" checked>
+          <label for="reply-email">Email</label>
+          <input type="radio" id="reply-phone" name="reply" value="phone">
+          <label for="reply-phone">Phone</label>
+        </fieldset>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Abdulazeez Mubarak. All rights reserved.</p>
+    <p><a href="#home">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
